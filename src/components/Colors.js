@@ -2,12 +2,9 @@ import React from 'react';
 
 const Colors = (props) => {
     
-    
-
   const allColors = props.list.map((color) => {    
-    const active = color === props.activeColor ? 'active' : '';  
+  const active = color === props.activeColor ? 'active' : '';  
      
-      
       return (
         
       <div

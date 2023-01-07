@@ -3,18 +3,14 @@ import Colors from './Colors';
 import Solution from './Solution';
 import Board from './Board';
 
-
 const Game = () => {
 
-    
     const colors = ['red', 'green', 'blue', 'orange', 'purple', 'yellow']
-  const trueRowArr = [];
+    const trueRowArr = [];
     for (let i = 0; i < 4; i++) {
       trueRowArr.push(colors[Math.floor(Math.random() * 4) + 1])
     }   
     
-   
-
     const [values, setValues] = useState({
       colors: colors,
       activeColor: 'red',
@@ -30,16 +26,11 @@ const Game = () => {
       defeat: false,
     })
 
-
-    
-
-    
     const activateColor = (color) => {
         setValues({...values, activeColor : color || values.activeColor})
     }
     console.log(values.activeColor);
- 
-  
+    
     const setColor = (color, id) => {
         console.log(color);
         if (values.victory) {

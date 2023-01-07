@@ -19,11 +19,6 @@ const Board =(props) => {
     return (
       <div className='board'>
         {rows}
-        {/* <Row  key={'row_' + 1}
-          id={'row_' + 1}
-          state={props.state}
-          pegAction={props.pegAction}
-          checkAction={props.checkAction}/> */}
       </div>
     )
   
